@@ -18,6 +18,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
     <Preference
+            android:key="xtended_hardware_keys"
+            android:title="@string/xtended_keys_title"
+            android:summary="@string/xtended_keys_summary"
+            android:fragment="com.cardinal.settings.fragments.XtendedHwkeysSettings" />
+
+    <Preference
             android:key="navigation_bar"
             android:title="@string/navigationbar_settings_title"
             android:summary="@string/navigationbar_settings_summary"
