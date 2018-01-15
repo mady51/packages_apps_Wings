@@ -305,4 +305,8 @@
     <string name="systemui_theme_style_auto">Wallpaper based</string>
     <string name="systemui_theme_style_light">Light</string>
     <string name="systemui_theme_style_dark">Dark</string>
+     
+    <!-- Xtended Key Action -->
+    <string name="xtended_keys_title">HW Key Actions</string>
+    <string name="xtended_keys_summary">Configure Custom Actions for Hardware Keys</string>
 </resources>
