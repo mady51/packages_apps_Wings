@@ -99,7 +99,8 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             		Settings.System.ANBI_ENABLED, 0) == 1));
             mAnbiPreference.setOnPreferenceChangeListener(this);
         }
-		
+    }	
+	
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mEnableNavBar) {
@@ -128,25 +129,4 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
         }
         return false;
     }
-
-    public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider() {
-                @Override
-                public List<SearchIndexableResource> getXmlResourcesToIndex(Context context,
-                        boolean enabled) {
-                    ArrayList<SearchIndexableResource> result =
-                            new ArrayList<SearchIndexableResource>();
-
-                    SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.cardinal_settings_navigationbar;
-                    result.add(sir);
-                    return result;
-                }
-
-                @Override
-                public List<String> getNonIndexableKeys(Context context) {
-                    ArrayList<String> result = new ArrayList<String>();
-                    return result;
-                }
-            };
 }

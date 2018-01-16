@@ -16,8 +16,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Cardinal Wings menus -->
-    <string name="cardinal_wings_title">Wings!</string>
-    <string name="keywords_cardinal">Cardinal-AOSP</string>
+    <string name="cardinal_wings_title">Xtended Wings!</string>
+    <string name="keywords_cardinal">Xtended</string>
 
     <!-- Main Settings -->
     <string name="general_title">General</string>
@@ -309,4 +309,13 @@
     <!-- Xtended Key Action -->
     <string name="xtended_keys_title">HW Key Actions</string>
     <string name="xtended_keys_summary">Configure Custom Actions for Hardware Keys</string>
+
+    <!-- Device Specific Options -->
+    <string name="device_part_title">OnePlus Options</string>
+    <string name="device_part_summary">Device Specific Customizations</string>
+
+    <!-- Ambient Display Options -->
+    <string name="device_doze_title">Ambient Options</string>
+    <string name="device_doze_summary">Ambient Display Customizations</string>
+
 </resources>

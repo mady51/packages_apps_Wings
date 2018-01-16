@@ -29,8 +29,7 @@
     <SwitchPreference
         android:key="button_brightness"
         android:title="@string/button_backlight_enable_title"
-        android:persistent="false"
-        android:dependency="navigation_bar_show" />
+        android:persistent="false" />
 
     <com.cardinal.settings.preference.CustomSeekBarPreference
         android:key="button_manual_brightness_new"
@@ -38,8 +37,7 @@
         android:max="255"
         settings:min="0"
         settings:units=""
-        android:persistent="false"
-        android:dependency="navigation_bar_show" />
+        android:persistent="false" />
 
     <ListPreference
         android:dialogTitle="@string/backlight_timeout_title"
@@ -47,15 +45,13 @@
         android:entryValues="@array/backlight_timeout_values"
         android:key="button_timeout"
         android:persistent="false"
-        android:title="@string/backlight_timeout_title" 
-        android:dependency="navigation_bar_show" />
+        android:title="@string/backlight_timeout_title" />
 
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="button_backlight_on_touch_only"
         android:title="@string/button_backlight_on_touch_only_title"
         android:summary="@string/button_backlight_on_touch_only_summary"
-        android:defaultValue="false"
-        android:dependency="navigation_bar_show" />
+        android:defaultValue="false" />
 
     </PreferenceCategory>
 

@@ -24,6 +24,16 @@
         android:entries="@array/systemui_theme_style_entries"
         android:entryValues="@array/systemui_theme_style_values" />
 
+    <Preference
+         android:key="device_doze"
+         android:persistent="false"
+         android:title="@string/device_doze_title"
+         android:summary="@string/device_doze_summary">
+         <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.custom.ambient.display"
+            android:targetClass="com.custom.ambient.display.DozeSettings"/>
+    </Preference>
+
     <com.cardinal.settings.preference.SystemSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
         android:title="@string/wake_when_plugged_or_unplugged_title"
