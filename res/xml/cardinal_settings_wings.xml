@@ -16,13 +16,12 @@
 
         <!-- Device Part -->
         <Preference
-            android:key="device_part"
-            android:persistent="false"
+            android:key="device_extras_category"
             android:title="@string/device_part_title"
             android:summary="@string/device_part_summary">
-            <intent android:action="android.intent.action.MAIN"
-                 android:targetPackage="org.omnirom.device"
-                 android:targetClass="org.omnirom.device.DeviceSettings"/>
+            <intent android:action="com.android.settings.action.EXTRA_SETTINGS"
+               android:targetPackage="com.dirtyunicorns.settings.device"
+               android:targetClass="com.dirtyunicorns.settings.device.TouchscreenGestureSettings" />
         </Preference>
 
         <Preference
